@@ -16,6 +16,16 @@
         "category": "logger"
     },
     {
+        "type": "file",
+        "filename": "./logs/main/logger",
+        "maxLogSize": 1048576,
+        "layout": {
+          "type": "basic"
+        },
+        "backups": 5,
+        "category": "logger"
+    },
+    {
       "type": "dateFile",
       "filename": "./logs/main/sys-error",
       "maxLogSize": 1048576,
@@ -57,18 +67,7 @@
     "logger":"DEBUG",
     "sys-error": "DEBUG",
     "pay": "INFO",
-    "route":"DEBUG",
-    "worker":"DEBUG",
-    "monitor-request":"INFO",
-    "monitor-send":"INFO",
-    "bi-wing":"INFO",
-    "bi-realm":"INFO",
-    "bi-boss":"INFO",
-    "bi-upStarStone":"INFO",
-    "bi-mysterShop":"INFO",
-    "bi-callBoss":"INFO",
-    "bi-lottery":"INFO",
-    "bi-genuineQi":"INFO"
+    "route":"DEBUG"
   },
   "replaceConsole": true,
   "lineDebug": false

@@ -69,6 +69,7 @@ app.post('/echo', function(req, res, next){
 var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('game server listening on port ' + app.get('port'));
   console.log('pid=' + process.pid);
+  logger.getLogger("logger", __filename).warn('game server listening on port ' , app.get('port'));
 });
 
 /*
